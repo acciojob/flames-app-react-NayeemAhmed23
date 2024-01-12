@@ -38,19 +38,21 @@ const App = () => {
       {/* Do not remove the main div */}
       <form>
         <input
-          type="teaxt"
+          type="text"
           placeholder="Enter the first name"
-          data-testid="input1"
+          data-testid="input1" name="name1"
           onChange={(e) => setName1(e.target.value)}
           value={name1}
         />
+
         <input
-          type="teaxt"
+          type="text"
           placeholder="Enter the second name"
-          data-testid="input2"
+          data-testid="input2" name="name2"
           onChange={(e) => setName2(e.target.value)}
           value={name2}
         />
+
         <button
           data-testid="calculate_relationship"
           type="submit"
@@ -58,6 +60,7 @@ const App = () => {
         >
           Calculate Relationship Future
         </button>
+
         <button
           data-testid="clear"
           type="reset"
